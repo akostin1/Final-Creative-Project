@@ -8,9 +8,9 @@ import ast
 
 # Introductory text
 st.header("What's this about?")
-st.text("As described in the Cosine Similarity webpage, we can assign each song’s spotify values to a unique vector in multidimensional space. Whereas cosine similarity computed the angle between vectors, Euclidean distance calculates (as one would expect) the distance between two vectors’ endpoints. As such, the lower this distance, the more similar one would expect two songs to be.")
+st.text("As described in the Cosine Similarity webpage, we can assign each song’s spotify values to a unique vector in multidimensional space. Whereas cosine similarity computed the angle between vectors, Euclidean distance calculates (as one would expect) the distance between two vectors’ endpoints. As such, the lower this distance, the more alike one would expect two songs to be.")
 st.image("Euc_Dist.png", caption="Example of the Euclidean distance between 2-dimensional vectors, with attributes 'valence' and 'energy.' Figure was created by Owen Yaggy and Dr. Richard Freedman, at Haverford College.")
-st.text("To remain consistent, we’ve normalized this value to express similarity on an identical scale from 0 to 1, where songs with a similarity closer to 1 are more similar. As such, we created a DataFrame of “ranked pairs” similar to that of our cosine similarity model, displaying songs similar to a degree of 0.95 or higher. By entering a proposed song and filtering to narrow down the list, one can create and download a similar DataFrame of recommendations. Give it a try for yourself!")
+st.text("To remain consistent, we’ve normalized this value to express similarity on an identical scale from 0 to 1, where songs with a similarity closer to 1 are more similar. As such, we created a DataFrame of “ranked pairs” like that of our cosine similarity model, displaying songs similar to a degree of 0.90 or higher. By entering a proposed song and filtering to narrow down the list, one can create and download a similar DataFrame of recommendations. Give it a try for yourself!")
 st.header("Recommendation Station")
 
 

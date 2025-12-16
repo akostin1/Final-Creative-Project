@@ -134,6 +134,7 @@ if len(year_list) == 1:
 
 
 # If year_list contains more than 1 year, we create a year filtering menu
+if len(year_list) > 1:
     start_year, end_year = st.select_slider(
     "Select a range of years",
     options=year_list,

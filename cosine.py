@@ -8,7 +8,7 @@ import ast
 
 # Introductory text
 st.header("What's this about?")
-st.text("As mentioned, Spotify assigns various attributes to its songs, each of which we have normalized from 0 to 1. The image below provides a snippet of the DataFrame of 13,000 songs curated for this app, with relevant normalized values.")
+st.text("As mentioned, Spotify assigns various attributes to its songs, each of which we have normalized from 0 to 1. The image below provides a snippet of the DataFrame of 17,000 songs curated for this app, with relevant normalized values.")
 st.image("DF_Example.png",caption="Example DataFrame of songs with their associated, normalized Spotify values.")
 st.text("Due to their numerical values, these attributes may be assigned vectors in multi-dimensional space, unique to each song. “Cosine similarity” between a pair of songs is assigned by calculating the cosine of the angle between both vectors. Ideally, the closer this value is to 1, the lower the angle between both vectors, and the more “similar” the songs are assumed to be.")
 st.image("Cos_Sim.png", caption="Example of the cosine similarity between 2-dimensional vectors, with attributes 'valence' and 'energy.' Figure was created by Owen Yaggy and Dr. Richard Freedman, at Haverford College.")

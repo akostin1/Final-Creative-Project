@@ -29,12 +29,11 @@ def load_songs_csv(file_path: str):
     return pd.read_csv(file_path)
 songs = load_songs_csv("songs.csv")
 
-#function to load cos_ranked_pairs CSV as a workable dataframe "ranked_pairs"
+#function to load cos_ranked_pairs data as a workable dataframe "ranked_pairs"
 @st.cache_data
-def load_cos_csv(file_path: str):
-    """Load CSV file and cache the result."""
-    return pd.read_csv(file_path)
-ranked_pairs = load_cos_csv("cos_ranked_pairs.csv")
+def load_cos_data():
+    url = "https://huggingface.co/datasets/akostin1/cos_ranked_pairs/resolve/main/cos_ranked_pairs.parquet"
+    return pd.read_parquet(url)
 
 
 # ___________________________________________________________________________________________

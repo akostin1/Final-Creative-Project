@@ -9,7 +9,7 @@ import pandas as pd
 st.header("What's this about?")
 st.text("This final recommendation method relies on the same spotify values as before, though it does not involve vectors. Rather, each song’s individual values (still normalized from 0 to 1) are sorted into evenly-spaced bins of low (l), medium-low (ml), medium (m), medium-high (mh), and high (h) magnitude. A fingerprint is then assigned to each song, resulting from its values categorizations. As a simplified example, if “Lovesong” by The Cure has medium-low danceability, high valence, and low danceability, it would be assigned a fingerprint of ml_h_l. ")
 st.image("Fingerprint_DF.png", caption="Example DataFrame of songs with their associated Spotify values binned into categories of low (l), medium-low (ml), medium (m), medium-high (mh), and high (h). Each song's resulting fingerprint is displayed in the final 'fingerprint' column.")
-st.text("Songs with identical fingerprints are then compiled into a DataFrame of recommended songs, excluding the inputted song itself. If there are no songs with matching fingerprints, the message “No matches found. Please select another song.” is displayed. Give it a try for yourself!")
+st.text("Songs with identical fingerprints are then compiled into a DataFrame of recommended songs, excluding the inputted song itself. Give it a try for yourself!")
 st.header("Recommendation Station")
 
 

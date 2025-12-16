@@ -35,6 +35,8 @@ def load_cos_data():
     url = "https://huggingface.co/datasets/akostin1/cos_ranked_pairs/resolve/main/cos_ranked_pairs.parquet"
     return pd.read_parquet(url)
 
+ranked_pairs = load_cos_data()
+
 
 # ___________________________________________________________________________________________
 

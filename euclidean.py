@@ -29,11 +29,10 @@ songs = load_songs_csv("songs.csv")
 
 #function to load euc_ranked_pairs CSV as a workable dataframe "ranked_pairs"
 @st.cache_data
-def load_euc_data():
-    url = "https://huggingface.co/datasets/akostin1/euc_ranked_pairs/resolve/main/euc_ranked_pairs.parquet"
-    return pd.read_parquet(url)
-
-ranked_pairs = load_euc_data()
+def load_euc_csv(file_path: str):
+    """Load CSV file and cache the result."""
+    return pd.read_csv(file_path)
+ranked_pairs = load_euc_csv("euc_ranked_pairs.csv")
 
 
 # ___________________________________________________________________________________________

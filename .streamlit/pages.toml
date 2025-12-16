@@ -1,0 +1,23 @@
+[[pages]]
+path = "homepage.py"
+name = "Home"
+icon = "🏠"
+url_path = "homepage"
+
+[[pages]]
+path = "cosine.py"
+name = "Cosine Similarity"
+icon = "📐"
+url_path = "cosine"
+
+[[pages]]
+path = "euclidean.py"
+name = "Euclidean Distance"
+icon = "🏃🏻‍♂️"
+url_path = "euclidean"
+
+[[pages]]
+path = "fingerprint.py"
+name = "Fingerprint"
+icon = "☝️"
+url_path = "fingerprint"
